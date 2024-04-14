@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>-SHADOW GAMES-</title>
+<div id="square"></div>
 <a><img src="poth.png" width="40%" height="40%"></a>
 <a><img src="ppdof.png" width="100%" height="50"></a>
 </head>
-<body style="background-color:#000000">
+<body style="background-color:#000000;">
+<style>
+#game {
+width: 15%;
+height: 15%;
+border-radius: 5px;
+padding: 2px;
 
-<a href=https://uncached.gamemonetize.co/t2jfbnsks7hn3mnd2fho5rz4sfwh1h2n/><img src="Wearit.png" width="160" height="160" alt="OffWear"></a>
-<p>This is a paragraph.</p>
+}
+@keyframes hide {
+  from {opacity: 1;}
+  to {opacity: 0;}
+  100% {z-index: -1;}
+}
+#desc {
+z-index: 1;
+position: absolute;
+font-size: 100%;
+}
+#play {
+position: relative;
+} 
+#square {
+width: 100%;
+height: 100%;
+background: #000000;
+position: absolute;
+z-index: 11;
+animation-name: hide;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+
+</style>
+
+<div id="play">
+<a href=https://uncached.gamemonetize.com/t2jfbnsks7hn3mnd2fho5rz4sfwh1h2n/>
+<img src="Wearit.png" id="game" title="OffWear"><h2 id="desc">OffWear</h2>
+</a>
+<a href=https://uncached.gamemonetize.com/x3ly8gb6b7negr0j8as3wrxtm2rjpp99/><img src="isle.webp"  id="game"></a>
+<a href=https://uncached.gamemonetize.com/kr10ya1dn4wn712kygi5szc6zkmdetaf/><img src="piza.png" id="game"></a>
+</div>
 
 </body>
 </html>
